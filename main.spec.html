@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>main.spec</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #bcbec4;}
+</style>
+</head>
+<body bgcolor="#191a1c">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+main.spec</font>
+</center></td></tr></table>
+<pre><span class="s0"># -*- mode: python ; coding: utf-8 -*-</span>
+
+
+<span class="s0">a = Analysis(</span>
+    <span class="s0">['main.py'],</span>
+    <span class="s0">pathex=[],</span>
+    <span class="s0">binaries=[],</span>
+    <span class="s0">datas=[],</span>
+    <span class="s0">hiddenimports=[],</span>
+    <span class="s0">hookspath=[],</span>
+    <span class="s0">hooksconfig={},</span>
+    <span class="s0">runtime_hooks=[],</span>
+    <span class="s0">excludes=[],</span>
+    <span class="s0">noarchive=False,</span>
+    <span class="s0">optimize=0,</span>
+<span class="s0">)</span>
+<span class="s0">pyz = PYZ(a.pure)</span>
+
+<span class="s0">exe = EXE(</span>
+    <span class="s0">pyz,</span>
+    <span class="s0">a.scripts,</span>
+    <span class="s0">a.binaries,</span>
+    <span class="s0">a.datas,</span>
+    <span class="s0">[],</span>
+    <span class="s0">name='main',</span>
+    <span class="s0">debug=False,</span>
+    <span class="s0">bootloader_ignore_signals=False,</span>
+    <span class="s0">strip=False,</span>
+    <span class="s0">upx=True,</span>
+    <span class="s0">upx_exclude=[],</span>
+    <span class="s0">runtime_tmpdir=None,</span>
+    <span class="s0">console=False,</span>
+    <span class="s0">disable_windowed_traceback=False,</span>
+    <span class="s0">argv_emulation=False,</span>
+    <span class="s0">target_arch=None,</span>
+    <span class="s0">codesign_identity=None,</span>
+    <span class="s0">entitlements_file=None,</span>
+<span class="s0">)</span>
+</pre>
+</body>
+</html>
